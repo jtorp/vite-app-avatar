@@ -3,7 +3,6 @@
  * Input: nums = [2,7,11,15], target = 9
 Output: [0,1] */
 
-
 var twoSum = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         const otherNumber = target - nums[i]
@@ -15,14 +14,12 @@ var twoSum = function (nums, target) {
 };
 
 
-//console.log(twoSum([3, 2, 4], 6))//9 expected output [0,1]
 
 var removeDuplicates = function (nums) {
     const k = nums.filter((num, index) => nums.indexOf(num) === index)
     return k
 };
 
-//console.log(removeDuplicates([1, 1, 2]))
 
 /**Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
 
@@ -39,7 +36,6 @@ var removeElement = function (nums, val) {
     return nums.length;
 };
 
-//console.log("Remove El", removeElement([[3, 2, 2, 3]]))
 
 var runningSum = function (nums) {
     const res = [];
@@ -53,7 +49,6 @@ var runningSum = function (nums) {
 
 };
 
-//console.log("Running sum", runningSum([1, 2, 3, 4]))
 
 /**Given an array of integers nums, calculate the pivot index of this array.
 
@@ -92,7 +87,6 @@ var pivotIndex = function (nums) {
     }
     return -1
 };
-//console.log("pivot index: ", pivotIndex([1, 7, 3, 6, 5, 6]))
 
 /** Fill array with square nums */
 const squareNums = []
@@ -102,5 +96,4 @@ for (let i = 0; i < squareNums.length; i++) {
     squareNums[i] = item
 }
 
-console.log(squareNums)
 
